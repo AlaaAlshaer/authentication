@@ -1,4 +1,6 @@
 # project: authentication web
+# Python version: 3.11.4
+# django version: 4.2.4
 # author: Alaa Alshaer
 # day: friday
 # date: 29 sep 2023
