@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="card mt-5">
+        <div class="card-header">Register</div>
+            <div class="card-body">
+                <form lass="form" role="form" method="POST">
+                    <div class="d-flex align-items-start flex-column">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                    
+                        <!-- Submit button -->
+                        <input type="submit" value ="Sign up" class="btn btn-primary btn-block mb-4"></input>
+                    
+                        <!-- Register buttons -->
+                        <div class="text-center">
+                            <a href="{% url "login" %}">Back to Login</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
